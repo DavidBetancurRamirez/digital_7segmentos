@@ -10,11 +10,6 @@ using namespace std;
 // Creación de los LEDS para la tarjeta FRDM-KL25Z
 BusOut leds(D0, D1, D2, D3, D4, D5, D6);
 
-void waitForEnter() {
-    printf("Presiona Enter para ingresar nuevo numero...");
-    while (getchar() != '\n');
-}
-
 int main(){
     // Arreglo con los numero DECIMALES en binario según los pines (A, B, C, D, E, F, G)
     int valorNumeros[] = {
