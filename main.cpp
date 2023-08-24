@@ -5,7 +5,11 @@
 
 #include "mbed.h"
 #include <iostream>
+
 using namespace std;
+
+// Objeto para establecer la comunicación serial con el Pc
+UnbufferedSerial serial(USBTX, USBRX, 9600);
 
 // Creación de los LEDS para la tarjeta FRDM-KL25Z
 BusOut leds(D0, D1, D2, D3, D4, D5, D6);
